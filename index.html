@@ -7,38 +7,61 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fffaf0;
+      background-color: #fff9e6; /* soft gold background */
       margin: 0;
       padding: 0;
       color: #333;
     }
     nav {
-      background-color: #f4d5b8;
+      background-color: #003366; /* Cavalier blue */
       padding: 1rem;
       text-align: center;
     }
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #333;
+      color: white;
       font-size: 1.1rem;
       font-weight: bold;
     }
     header {
-      background-color: #f4d5b8;
-      color: #333;
+      background-color: #003366;
+      color: white;
       padding: 2rem;
       text-align: center;
       font-size: 1.8rem;
     }
     .welcome {
-      background-color: #fdebd0;
+      background-color: #cce0ff; /* light blue welcome box */
       text-align: center;
       padding: 2rem;
       margin: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       font-size: 1.3rem;
+    }
+    .announcement-bar {
+      background-color: #cce0ff;
+      padding: 1rem;
+      overflow: hidden;
+      white-space: nowrap;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .announcement-bar p {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #003366;
+    }
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
     }
     section {
       padding: 2rem;
@@ -53,11 +76,12 @@
     h2 {
       font-size: 1.8rem;
       margin-bottom: 0.5rem;
-      color: #333;
+      color: #003366;
     }
     h3 {
       font-size: 1.4rem;
       margin-bottom: 0.3rem;
+      color: #003366;
     }
     table {
       width: 100%;
@@ -69,16 +93,25 @@
       text-align: left;
     }
     th {
-      background-color: #fce3ca;
+      background-color: #cce0ff;
       font-size: 1.1rem;
+      color: #003366;
     }
     img {
       width: 100%;
       border-radius: 8px;
       margin-top: 10px;
     }
+    footer {
+      background-color: #003366;
+      color: gold;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
     a {
-      color: #0066cc;
+      color: #003366;
     }
   </style>
 </head>
@@ -97,9 +130,13 @@
     Family and Consumer Sciences | Hugh M. Cummings High School
   </header>
 
+  <div class="announcement-bar">
+    <p>⭐ Welcome Cavaliers! Stay updated: Homework due April 15, Field Trip April 30! ⭐</p>
+  </div>
+
   <div class="welcome">
     <h2>Welcome to Our Class Website!</h2>
-    <p>I'm excited to help you grow, learn, and explore Family and Consumer Sciences this year. Feel free to explore all sections and stay updated on important events!</p>
+    <p>I’m excited to help you grow, learn, and explore Family and Consumer Sciences this year. Explore all sections and stay informed!</p>
   </div>
 
   <section id="about">
@@ -132,16 +169,20 @@
         <tbody>
           <tr><td>April 9, 2025</td><td>Welcome Back! First Day of Quarter 4</td></tr>
           <tr><td>April 11, 2025</td><td>Nutrition Basics Lesson</td></tr>
+          <tr><td>April 15, 2025</td><td>Homework Due: Healthy Snack Research</td></tr>
           <tr><td>April 16, 2025</td><td>Guest Speaker: Local Chef (Culinary Careers)</td></tr>
           <tr><td>April 18, 2025</td><td>Lab: Cooking Safety & Sanitation</td></tr>
           <tr><td>April 23, 2025</td><td>Budgeting Basics for Teens</td></tr>
           <tr><td>April 25, 2025</td><td>Project Due: Meal Planning & Grocery List</td></tr>
           <tr><td>April 30, 2025</td><td>Field Trip: Local Farmers Market</td></tr>
-          <tr><td>May 2, 2025</td><td>Child Development: Growth Milestones</td></tr>
-          <tr><td>May 7, 2025</td><td>Review Day: End-of-Unit Prep</td></tr>
-          <tr><td>May 9, 2025</td><td>Unit Quiz: Family Nutrition</td></tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="card">
+      <h2>Homework Assignment</h2>
+      <p><strong>Assignment:</strong> Research and write a short description of one healthy snack. Include why it is a healthy choice and submit your paragraph.</p>
+      <p><strong>Due Date:</strong> April 15, 2025</p>
     </div>
 
     <div class="card">
@@ -163,9 +204,12 @@
       <h2>Student Blog Reflection</h2>
       <p><strong>Prompt:</strong> Reflect on your current eating habits. How can you improve them based on what we've learned about nutrition?</p>
       <p><strong>Submit here:</strong> <a href="https://forms.gle/YzuL2iG6aRaUDrAx6" target="_blank">Blog Reflection Google Form</a></p>
-      <p>Please submit thoughtful responses. We'll feature student reflections during upcoming class discussions.</p>
     </div>
   </section>
+
+  <footer>
+    Hugh M. Cummings High | Burlington, NC | Motto: Second to None
+  </footer>
 
 </body>
 </html>
