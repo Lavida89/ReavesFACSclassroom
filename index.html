@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ms. Reaves | Family and Consumer Sciences</title>
   <style>
     html {
@@ -24,7 +24,7 @@
       margin: 0 15px;
       text-decoration: none;
       color: white;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: bold;
     }
     header {
@@ -36,18 +36,17 @@
     }
     .announcement-bar {
       background-color: gold;
+      color: #003366;
       padding: 1rem;
       overflow: hidden;
       white-space: nowrap;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-weight: bold;
+      font-size: 1.1rem;
     }
     .announcement-bar p {
       display: inline-block;
       padding-left: 100%;
       animation: scroll-left 15s linear infinite;
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: #003366;
     }
     @keyframes scroll-left {
       0% { transform: translateX(0%); }
@@ -64,23 +63,50 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     h2 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.8rem;
+      color: #003366;
+    }
+    h3 {
+      font-size: 1.4rem;
+      color: #003366;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #cce0ff;
       color: #003366;
     }
     img {
       width: 100%;
       border-radius: 8px;
-      margin-top: 15px;
+      margin-top: 10px;
     }
     footer {
       background-color: #003366;
       color: gold;
       text-align: center;
       padding: 1.5rem;
-      font-size: 1.2rem;
-      margin-top: 3rem;
-      border-top: 5px solid gold;
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+    .back-to-top {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .back-to-top a {
+      color: #003366;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a {
+      color: #003366;
     }
   </style>
 </head>
@@ -99,22 +125,20 @@
   </header>
 
   <div class="announcement-bar">
-    <p>⭐ Homework Due: April 15 | Field Trip: April 30 | Project Due: May 2 ⭐</p>
+    <p>📢 Homework Due: April 15 | Field Trip: April 30 | Project Due: May 5 📢</p>
   </div>
 
-  <section class="welcome">
-    <div class="card">
-      <h2>Welcome to Our Class Website!</h2>
-      <p>I’m excited to help you grow, learn, and explore Family and Consumer Sciences this year. Explore all sections and stay informed!</p>
-      <img src="https://images.unsplash.com/photo-1592878819422-7a24a4e469bb?auto=format&fit=crop&w=1500&q=80" alt="Budgeting and Grocery Planning">
-    </div>
-  </section>
+  <div class="welcome">
+    <h2>Welcome to Our Class Website!</h2>
+    <p>I’m excited to help you grow, learn, and explore Family and Consumer Sciences this year. Explore all sections and stay informed!</p>
+    <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=1500&q=80" alt="Meal Planning Board">
+  </div>
 
   <section id="about">
     <div class="card">
       <h2>About Me</h2>
       <p>I have a Bachelor's Degree in Child Development Education and am currently pursuing a Master's in Family and Consumer Sciences. With five years of teaching experience, I am committed to fostering growth and development in my students.</p>
-      <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1500&q=80" alt="Teacher in High School Classroom">
+      <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1500&q=80" alt="Teacher Presenting to Students">
     </div>
 
     <div class="card" id="contact">
@@ -129,52 +153,62 @@
 
     <div class="card">
       <h2>General Overview of the Class</h2>
-      <p>Family and Consumer Sciences (FACS) provides students with life skills in areas such as nutrition, budgeting, family relationships, food preparation, and personal development. This course prepares students to succeed in home life, careers, and their communities.</p>
+      <p>Family and Consumer Sciences (FACS) teaches life skills like nutrition, budgeting, relationships, and food preparation. Our goal is to help students succeed at home, in careers, and in their communities.</p>
     </div>
   </section>
 
   <section id="assignments">
     <div class="card">
       <h2>Important Dates</h2>
-      <ul>
-        <li>April 15 - Homework Due: Healthy Snack Research</li>
-        <li>April 30 - Field Trip to Local Farmers Market</li>
-        <li>May 2 - Project Due: Meal Planning & Budgeting</li>
-      </ul>
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Event</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>April 15</td><td>Homework Due: Healthy Snack Research</td></tr>
+          <tr><td>April 30</td><td>Field Trip: Farmers Market</td></tr>
+          <tr><td>May 5</td><td>Project Due: Grocery Budget Plan</td></tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="card">
       <h2>Homework Assignment</h2>
-      <p><strong>Assignment:</strong> Research and describe one healthy snack. Include why it is a good nutritional choice. Submit one paragraph.</p>
-      <img src="https://images.unsplash.com/photo-1555231952-cfb8f6e7b35c?auto=format&fit=crop&w=1500&q=80" alt="Student Homework">
+      <p><strong>Assignment:</strong> Research and describe one healthy snack. Explain why it’s a smart choice.</p>
+      <p><strong>Due Date:</strong> April 15, 2025</p>
+      <img src="https://images.unsplash.com/photo-1555231952-cfb8f6e7b35c?auto=format&fit=crop&w=1500&q=80" alt="Student Studying">
     </div>
 
     <div class="card">
       <h2>Virtual Field Trip</h2>
-      <p>Take a virtual tour inside USDA and explore food, farming, and nutrition in the United States.</p>
+      <p>Explore how food is grown and processed with this USDA tour.</p>
       <p><strong>Link:</strong> <a href="https://www.usda.gov/media/virtual-tours" target="_blank">USDA Virtual Tour</a></p>
       <img src="https://images.unsplash.com/photo-1579113800419-e0f049d6de0e?auto=format&fit=crop&w=1500&q=80" alt="Farmers Market">
     </div>
 
     <div class="card">
       <h2>WebQuest: Healthy Eating</h2>
-      <p>Use this WebQuest to learn how to eat well on a budget and understand basic nutrition!</p>
+      <p>Use this WebQuest to learn how to eat well and budget smartly!</p>
       <p><strong>Link:</strong> <a href="https://www.teachersfirst.com/quest.cfm?id=625" target="_blank">Healthy Eating WebQuest</a></p>
-      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1500&q=80" alt="Healthy Meal">
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1500&q=80" alt="Balanced Meal">
     </div>
 
     <div class="card">
       <h2>Student Blog Reflection</h2>
-      <p><strong>Prompt:</strong> Reflect on your current eating habits. How can you improve them based on what we've learned about nutrition?</p>
-      <p><strong>Submit here:</strong> <a href="https://forms.gle/YzuL2iG6aRaUDrAx6" target="_blank">Blog Reflection Google Form</a></p>
-      <img src="https://images.unsplash.com/photo-1517638851339-4aa32003c8a4?auto=format&fit=crop&w=1500&q=80" alt="Student Reflection">
+      <p><strong>Prompt:</strong> Reflect on your current eating habits. How can you improve them based on what you’ve learned?</p>
+      <p><strong>Submit here:</strong> <a href="https://forms.gle/YzuL2iG6aRaUDrAx6" target="_blank">Blog Reflection Form</a></p>
+      <img src="https://images.unsplash.com/photo-1517638851339-4aa32003c8a4?auto=format&fit=crop&w=1500&q=80" alt="Student Writing">
     </div>
 
     <div class="card">
       <h2>School Website</h2>
-      <p><strong>Visit our school website here:</strong> <a href="https://www.abss.k12.nc.us/o/hugh-cummings-high" target="_blank">Hugh M. Cummings High School</a></p>
+      <p>Visit our school website: <a href="https://www.abss.k12.nc.us/o/hugh-cummings-high" target="_blank">Hugh M. Cummings High School</a></p>
     </div>
   </section>
+
+  <div class="back-to-top">
+    <a href="#home">↑ Back to Top</a>
+  </div>
 
   <footer>
     Hugh M. Cummings High | Burlington, NC | Motto: Second to None
