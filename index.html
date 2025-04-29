@@ -29,22 +29,13 @@
     }
     header {
       background-color: #003366;
-      color: white;
+      color: gold;
       padding: 2rem;
       text-align: center;
       font-size: 2rem;
     }
-    .welcome {
-      background-color: #cce0ff;
-      text-align: center;
-      padding: 2rem;
-      margin: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      font-size: 1.4rem;
-    }
     .announcement-bar {
-      background-color: #cce0ff;
+      background-color: gold;
       padding: 1rem;
       overflow: hidden;
       white-space: nowrap;
@@ -77,25 +68,6 @@
       margin-bottom: 0.5rem;
       color: #003366;
     }
-    h3 {
-      font-size: 1.6rem;
-      margin-bottom: 0.3rem;
-      color: #003366;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 10px;
-      border: 1px solid #ddd;
-      text-align: left;
-    }
-    th {
-      background-color: #cce0ff;
-      font-size: 1.2rem;
-      color: #003366;
-    }
     img {
       width: 100%;
       border-radius: 8px;
@@ -110,23 +82,8 @@
       margin-top: 3rem;
       border-top: 5px solid gold;
     }
-    .back-to-top {
-      display: block;
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 1rem;
-    }
-    .back-to-top a {
-      text-decoration: none;
-      color: #003366;
-      font-weight: bold;
-    }
-    a {
-      color: #003366;
-    }
   </style>
 </head>
-
 <body>
 
   <nav>
@@ -142,14 +99,16 @@
   </header>
 
   <div class="announcement-bar">
-    <p>⭐ Welcome Cavaliers! Stay updated: Homework due April 15, Field Trip April 30! ⭐</p>
+    <p>⭐ Homework Due: April 15 | Field Trip: April 30 | Project Due: May 2 ⭐</p>
   </div>
 
-  <div class="welcome">
-    <h2>Welcome to Our Class Website!</h2>
-    <p>I’m excited to help you grow, learn, and explore Family and Consumer Sciences this year. Explore all sections and stay informed!</p>
-    <img src="https://images.unsplash.com/photo-1592878819422-7a24a4e469bb?auto=format&fit=crop&w=1500&q=80" alt="Budgeting and Grocery Planning">
-  </div>
+  <section class="welcome">
+    <div class="card">
+      <h2>Welcome to Our Class Website!</h2>
+      <p>I’m excited to help you grow, learn, and explore Family and Consumer Sciences this year. Explore all sections and stay informed!</p>
+      <img src="https://images.unsplash.com/photo-1592878819422-7a24a4e469bb?auto=format&fit=crop&w=1500&q=80" alt="Budgeting and Grocery Planning">
+    </div>
+  </section>
 
   <section id="about">
     <div class="card">
@@ -177,54 +136,38 @@
   <section id="assignments">
     <div class="card">
       <h2>Important Dates</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Event</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>April 9, 2025</td><td>Welcome Back! First Day of Quarter 4</td></tr>
-          <tr><td>April 11, 2025</td><td>Nutrition Basics Lesson</td></tr>
-          <tr><td>April 15, 2025</td><td>Homework Due: Healthy Snack Research</td></tr>
-          <tr><td>April 16, 2025</td><td>Guest Speaker: Local Chef (Culinary Careers)</td></tr>
-          <tr><td>April 18, 2025</td><td>Lab: Cooking Safety & Sanitation</td></tr>
-          <tr><td>April 23, 2025</td><td>Budgeting Basics for Teens</td></tr>
-          <tr><td>April 25, 2025</td><td>Project Due: Meal Planning & Grocery List</td></tr>
-          <tr><td>April 30, 2025</td><td>Field Trip: Local Farmers Market</td></tr>
-        </tbody>
-      </table>
+      <ul>
+        <li>April 15 - Homework Due: Healthy Snack Research</li>
+        <li>April 30 - Field Trip to Local Farmers Market</li>
+        <li>May 2 - Project Due: Meal Planning & Budgeting</li>
+      </ul>
     </div>
 
     <div class="card">
       <h2>Homework Assignment</h2>
-      <p><strong>Assignment:</strong> Research and write a short description of one healthy snack. Include why it is a healthy choice and submit your paragraph.</p>
-      <p><strong>Due Date:</strong> April 15, 2025</p>
-      <img src="https://images.unsplash.com/photo-1555231952-cfb8f6e7b35c?auto=format&fit=crop&w=1500&q=80" alt="Student Studying Homework">
+      <p><strong>Assignment:</strong> Research and describe one healthy snack. Include why it is a good nutritional choice. Submit one paragraph.</p>
+      <img src="https://images.unsplash.com/photo-1555231952-cfb8f6e7b35c?auto=format&fit=crop&w=1500&q=80" alt="Student Homework">
     </div>
 
     <div class="card">
       <h2>Virtual Field Trip</h2>
       <p>Take a virtual tour inside USDA and explore food, farming, and nutrition in the United States.</p>
       <p><strong>Link:</strong> <a href="https://www.usda.gov/media/virtual-tours" target="_blank">USDA Virtual Tour</a></p>
-      <p><strong>Instructions:</strong> Watch the tour and write 1 paragraph about what you learned related to food safety, farming, or production.</p>
-      <img src="https://images.unsplash.com/photo-1579113800419-e0f049d6de0e?auto=format&fit=crop&w=1500&q=80" alt="Farmers Market Fresh Produce">
+      <img src="https://images.unsplash.com/photo-1579113800419-e0f049d6de0e?auto=format&fit=crop&w=1500&q=80" alt="Farmers Market">
     </div>
 
     <div class="card">
       <h2>WebQuest: Healthy Eating</h2>
       <p>Use this WebQuest to learn how to eat well on a budget and understand basic nutrition!</p>
       <p><strong>Link:</strong> <a href="https://www.teachersfirst.com/quest.cfm?id=625" target="_blank">Healthy Eating WebQuest</a></p>
-      <p><strong>Instructions:</strong> Follow all steps in the WebQuest and complete your response sheet for class review.</p>
-      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1500&q=80" alt="Balanced Meal Example">
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1500&q=80" alt="Healthy Meal">
     </div>
 
     <div class="card">
       <h2>Student Blog Reflection</h2>
       <p><strong>Prompt:</strong> Reflect on your current eating habits. How can you improve them based on what we've learned about nutrition?</p>
       <p><strong>Submit here:</strong> <a href="https://forms.gle/YzuL2iG6aRaUDrAx6" target="_blank">Blog Reflection Google Form</a></p>
-      <img src="https://images.unsplash.com/photo-1517638851339-4aa32003c8a4?auto=format&fit=crop&w=1500&q=80" alt="Student Journal Reflection">
+      <img src="https://images.unsplash.com/photo-1517638851339-4aa32003c8a4?auto=format&fit=crop&w=1500&q=80" alt="Student Reflection">
     </div>
 
     <div class="card">
@@ -232,10 +175,6 @@
       <p><strong>Visit our school website here:</strong> <a href="https://www.abss.k12.nc.us/o/hugh-cummings-high" target="_blank">Hugh M. Cummings High School</a></p>
     </div>
   </section>
-
-  <div class="back-to-top">
-    <a href="#home">↑ Back to Top</a>
-  </div>
 
   <footer>
     Hugh M. Cummings High | Burlington, NC | Motto: Second to None
